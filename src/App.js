@@ -18,8 +18,8 @@ class App extends React.Component {
 
 	</div>
       <div className="main">
-		<h1><center>To Harshita</center></h1>
-		<h3><center>You are too Cute</center></h3>
+		<h1><center>Hey Shrutisha</center></h1>
+		<h3><center>You are a cute little brave Girl. Aren't ya</center></h3>
       </div>
 	  </div>
     );
