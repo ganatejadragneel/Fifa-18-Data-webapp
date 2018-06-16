@@ -1,9 +1,46 @@
-#first{
-	z-index:2;
-	height:10vh;
-	width:100%;
+.header{
+	font-size:6vh;
+	color:blue;
+}
+
+ul {
+  list-style-type: none;
 }
 
 #header{
+	text-align:center;
+}
+
+.randomSpace1{
+	max-height:2vh;
+	width:100%;
+}
+
+.leftimage{
+	float:left;
+	width:100%;
+	height:12vh;
+}
+
+.leftimage img{
+	max-height: 100%;
+	max-width: 100%;
+}
+
+#list1{	
+	width:33%;
+	float:left;
+	font-style:italic;
+	font-size:0.9em;
+}
+
+.first{
+	width:100%;
+	height:17vh;
+}
+
+#but{
+	width:20%;
+	float:left;
 	text-align:center;
 }
