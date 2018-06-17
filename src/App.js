@@ -1,5 +1,8 @@
 import React from 'react';
 import {Groups} from './components/groups';
+import {Matches} from './components/matches';
+import {Results} from './components/results'
+import {KeyPlayers} from './components/keyplayers'
 import './App.css';
 import imgg from './images/fifalogo.jpg';
 import {Button} from 'reactstrap';
@@ -11,6 +14,26 @@ class App extends React.Component {
 		this.state={
 			page:<Groups/>
 		}
+		this.handleChangeMatches=this.handleChangeMatches.bind(this);
+		this.handleChangeGroups=this.handleChangeGroups.bind(this);
+		this.handleChangeResults=this.handleChangeResults.bind(this);
+		this.handleChangeKeyPlayers=this.handleChangeKeyPlayers.bind(this);
+	}
+	
+	handleChangeMatches(){
+		this.setState({page:<Matches/>})
+	}
+	
+	handleChangeGroups(){
+		this.setState({page:<Groups/>})
+	}
+	
+	handleChangeResults(){
+		this.setState({page:<Results/>})
+	}
+	
+	handleChangeKeyPlayers(){
+		this.setState({page:<KeyPlayers/>})
 	}
 	
 	render() {
@@ -29,11 +52,10 @@ class App extends React.Component {
 		</ul>
 		</div>
 		<div className="second">
-			<div id="but"><Button color="primary">Groups</Button></div>
-			<div id="but"><Button color="secondary">Matches</Button></div>
-			<div id="but"><Button color="success">Fixtures</Button></div>
-			<div id="but"><Button color="info">Results</Button></div>
-			<div id="but"><Button color="warning">News</Button></div>
+			<div id="but"><Button color="primary" onClick={this.handleChangeGroups}>Groups</Button></div>
+			<div id="but"><Button color="secondary" onClick={this.handleChangeMatches}>Matches</Button></div>
+			<div id="but"><Button color="success" onClick={this.handleChangeKeyPlayers}>Key Players</Button></div>
+			<div id="but"><Button color="info" onClick={this.handleChangeResults}>Results</Button></div>
 		</div>
 		<div>
 			{this.state.page}

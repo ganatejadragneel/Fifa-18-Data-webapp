@@ -3,14 +3,17 @@
 	margin-top:10vh;
 	width:25%;
 	height:30vh;
-	background-color:#535ded;
-	border:solid 2px;
+	background-color:#87f484;
+	border:solid 1px;
+	border-radius:5px;
 }
 
 .title{
+	width:50%;
 	background-color:#17eac0;
 	height:5vh;
 	border:solid 1px black;
+	margin-left:25%;
 	text-align:center;
 	font-size:3vh;
 	font-weight:bold;
@@ -25,4 +28,6 @@
 	font-size:3.7vh;
 	font-family:sans-serif;
 	font-style:italic;
+	display:block;
+	margin-left:15%;
 }

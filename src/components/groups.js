@@ -2,6 +2,7 @@ import React from 'react';
 import './groups.css'
 
 export class Groups extends React.Component{
+	
 	render(){
 		return (
 			<div>
