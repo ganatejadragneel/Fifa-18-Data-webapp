@@ -9,7 +9,7 @@ class App extends React.Component {
 	constructor(props){
 		super(props)
 		this.state={
-			
+			page:<Groups/>
 		}
 	}
 	
@@ -34,6 +34,9 @@ class App extends React.Component {
 			<div id="but"><Button color="success">Fixtures</Button></div>
 			<div id="but"><Button color="info">Results</Button></div>
 			<div id="but"><Button color="warning">News</Button></div>
+		</div>
+		<div>
+			{this.state.page}
 		</div>
 	</div>
     );
